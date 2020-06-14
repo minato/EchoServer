@@ -33,7 +33,7 @@ int EchoServer::run()
 	fd_set fds, readfds;
 	FD_ZERO(&readfds);
 	FD_SET(waitSocket, &readfds);
-    int maxfd = waitSocket;
+	int maxfd = waitSocket;
 
 	struct timeval  tv;
 	tv.tv_sec = 0;
